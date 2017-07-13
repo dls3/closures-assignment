@@ -6,13 +6,14 @@ clickCounter.addEventListener('click', getClickCountHandler());
 // Eg. the first time it's clicked, it should output:
 // You have clicked this button 1 times.
 
-
 // Problem 1: fill in this function
 function getClickCountHandler() {
-
+  var num = 0;
+  return function() {
+    num++;
+    console.log("You have clicked this button " + num + " times.");
+  }
 }
-
-
 
 document.addEventListener('keydown', getSecretKeyCodeEventHandler());
 
@@ -26,7 +27,10 @@ document.addEventListener('keydown', getSecretKeyCodeEventHandler());
 // ie. if the parameter is called event, then write: event.keyCode
 // Also note that the keycode for Enter is 13
 
-function getSecretKeyCodeEventHandler() {
+function getSecretKeyCodeEventHandler(event) {
   // FILL THIS IN
-
+  return function (event) {
+    var secretCode = event.keyCode;
+    console.log(secretCode);
+  }
 }

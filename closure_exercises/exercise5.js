@@ -17,14 +17,3 @@ flyTo("Shanghai");
 personToVisit = "Toronto"; // (has no effect on next method call)
 flyTo("Lagos");
 // Enjoy your visit to Lagos to visit your best friend.
-
-
-// function sendNote(note) {
-//   getSendNoteFunction();
-//   console.log(note);
-// }
-//
-// function getSendNoteFunction() {
-//   var recipient = "Devon";
-//   console.log("Dear " + recipient + ",");
-// }
